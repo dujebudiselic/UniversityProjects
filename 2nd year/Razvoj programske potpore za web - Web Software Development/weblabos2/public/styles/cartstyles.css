@@ -1,0 +1,49 @@
+body{
+   background-image: url('../images/background.jpg');
+}
+
+.kosara1{
+   border: 1px solid black; display: flex; flex-flow: wrap;  justify-content: space-between; margin: 10px; 
+   flex-direction: column; text-align: center; height: 300px; position: relative;
+}
+#slikasport{
+   width: 100%; height: 100%; line-height: 100px;
+}
+.gumbuslici{
+   position: absolute; cursor: pointer; background-color: blue; color: white;
+}
+
+
+
+.kosara2{
+   border: 1px solid black; display: flex; flex-flow: wrap;  justify-content: space-between; margin: 10px; 
+   flex-direction: column; text-align: center; background-color: white;
+}
+#ime{
+   justify-content: space-between; margin: 10px; display: flex; align-items: center;
+}
+#listakosarice{
+   display: flex; flex-flow: wrap;  justify-content: space-between; margin: 10px; text-align: center;
+   flex-direction: column;
+}
+#proizvod{
+   display: flex; flex-flow: wrap;  justify-content: space-between; margin: 10px; text-align: center;
+   flex-direction: row;
+}
+.minus{
+   display: inline-block; width: 20px; height: 20px; background-color: blue;
+   color: white; border-radius: 50%; cursor: pointer;
+}
+.plus{
+   display: inline-block; width: 20px; height: 20px; background-color: blue;
+   color: white; border-radius: 50%; cursor: pointer;
+}
+.kosarastvari{
+   border: 1px solid black; 
+   display: flex; flex-flow: wrap;  justify-content: space-between; margin: 10px; text-align: center;
+   flex-direction: column;
+}
+
+.izbrisi{
+   width: max-content; text-align: right; background-color: blue; color: white; cursor: pointer;
+}

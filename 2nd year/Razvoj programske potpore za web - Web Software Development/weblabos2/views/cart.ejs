@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+   <%- include('./partials/headcart.ejs')%>
+
+<body>
+   
+   <%- include('./partials/kosara1.ejs')%>
+
+   <div class="kosara2">
+      <div>Kosarica</div>
+         <div class="kosarastvari">
+            <div id="ime">
+               <div>NAZIV PROIZVODA</div>
+               <div>KOLICINA</div>
+         </div>
+         <div id="listakosarice">
+            <% if (kosarica.length > 0) { %>
+               <% kosarica.forEach(function(proizvod) { %>
+                  <% if (proizvod.kolicina) { %>
+                     <div id="proizvod">
+                        <div>
+                           <span><%= proizvod.id %></span>
+                        </div>
+                        <div>
+                           <a class="minus" href="/cart/remove/<%=proizvod.id%>"> - </a>
+                           <span><%= proizvod.kolicina %></span>
+                           <a class="plus" href="/cart/add/<%=proizvod.id%>"> + </a>
+                        </div>
+                     </div>
+                  <%}%>
+               <% }); %>
+            <% } else { %>
+                  <p>Prazna košara! Ajde kupi nešto!</p>
+            <% } %>
+         </div>
+      </div> 
+      <a class="izbrisi" href="/cart/removeAll">
+         Izbriši
+      </a>     
+   </div>
+
+
+</body>
+</html>

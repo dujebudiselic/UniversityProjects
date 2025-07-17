@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+   <%- include('./partials/headhome.ejs')%>
+
+<body>
+
+<div class="grid-container">
+   <div class="logo" id="logoopis">
+      <img id="logoslika" src="/images/logo1.jpg" alt="logo">
+   </div>
+   <div class="headerpod" id="headerpodopis">
+      <div id="kategorija">
+         <%= ime %> 
+      </div>
+      <div id="kosara_trazilica"> 
+         <div id="kosara">
+            <a class="gumbkosarica" href="/cart">
+               <img id="slikakosarica" src="/images/kosarica.png" alt="kosarica">
+            </a>
+            <% if (ukupno > 0) { %>
+               <span id="crveni"><%= ukupno%></span>
+            <%}%>
+         </div>
+         <div id="trazilica">
+            <img id="slikatrazilica" src="/images/trazilica.png" alt="trazilica">
+         </div>
+      </div>
+   </div>   
+   
+   <%- include('./partials/main1.ejs')%>
+
+   <div class="aside1" id="gi3">
+      <a class="sportovi1" href="/home/getProducts/Američki nogomet">Američki nogomet</a>
+      <a class="sportovi1" href="/home/getProducts/Baseball">Baseball</a>
+      <a class="sportovi1" href="/home/getProducts/Boks">Boks</a>
+      <a class="sportovi1" href="/home/getProducts/Golf">Golf</a>
+      <a class="sportovi1" href="/home/getProducts/Gym">Gym</a>
+      <a class="sportovi1" href="/home/getProducts/Hokej">Hokej</a>
+      <a class="sportovi1" href="/home/getProducts/Košarka">Košarka</a>
+      <a class="sportovi1" href="/home/getProducts/Nogomet">Nogomet</a>
+      <a class="sportovi1" href="/home/getProducts/Odbojka">Odbojka</a>
+      <a class="sportovi1" href="/home/getProducts/Tenis">Tenis</a>
+   </div>
+   
+   <%- include('./partials/aside2.ejs')%>
+
+   <div class="main2" id="gi5">
+      <% if (proizvodi.length > 0) { %>
+         <% proizvodi.forEach(function(proizvod1) { %>
+            <div id="novispojslike">
+               <div id="slikagumb">
+                  <img id="slikaproizvoda1" src="<%= proizvod1.image %>" alt="proizvod1">
+                  <a class="kupigumb" href="/cart/add/<%= proizvod1.name %>">
+                     <img id="kosaricadodaj" src="/images/kosarica.png" alt="kosara">
+                  </a>
+               </div>
+               <p id="proizvod1"><%= proizvod1.name %></p>
+               <p id="kategorija1>"><%= ime2 %></p>
+               <% if(kosarica.find(function(proizvod2) {
+                  return proizvod2.id === proizvod1.name;
+                })){%>
+                  <%if(kosarica.find(function(proizvod2) {
+                  return proizvod2.id === proizvod1.name;
+                  }).kolicina > 0){%>
+                     <span id="crvenislika1"><%= kosarica.find(function(proizvod2) {
+                     return proizvod2.id === proizvod1.name;
+                     }).kolicina %></span>
+                  <%}%>
+               <% } %>
+            </div>
+         <% }); %>
+      <% } else { %>
+         <p id="izkat">IZABERI KATEGORIJU!!!</p>
+      <% } %>
+   </div>
+
+</div>
+
+</body>
+</html>

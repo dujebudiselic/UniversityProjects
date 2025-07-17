@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>sportshop</title>
+   <meta charset=”UTF-8”/>
+   <meta name=”keywords” content=”html, oznake, struktura”/>
+   <link href="styles/sites.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+<div class="grid-container">
+
+   <div class="logo", id="logoopis">
+      <img id="logoslika" src="images/logo1.jpg" alt="logo">
+   </div>
+   <div class="headerpod", id="headerpodopis">
+      <div id="kategorija" >
+         Kategorija x (trenutno otvorena)
+      </div>
+      <div id="kosara_trazilica"> 
+         <div id="kosara">
+            <button id="gumbkosarica" onclick="dokosarica()">
+               <img id="slikakosarica" src="images/kosarica.png" alt="kosarica">
+            </button>
+            <span id="crveni">0</span>
+         </div>
+         <div id="trazilica">
+            <img id="slikatrazilica" src="images/trazilica.png" alt="trazilica">
+         </div>
+      </div>
+   </div>   
+      
+   
+
+   <div class="main1", id="gi2">
+      <div id="pozdrav">Dobrodosli na najbolju online sportsku trgovinu!</div>
+      <img id="velikaslika" src="images/sports.jpg" alt="sportovi"> 
+   </div>
+
+   <div class="aside1", id="gi3">
+      <button id="sportovi1" onclick="kategorija('Američki nogomet')">Američki nogomet</button>
+      <button id="sportovi1" onclick="kategorija('Baseball')">Baseball</button>
+      <button id="sportovi1" onclick="kategorija('Boks')">Boks</button>
+      <button id="sportovi1" onclick="kategorija('Golf')">Golf</button>
+      <button id="sportovi1" onclick="kategorija('Gym')">Gym</button>
+      <button id="sportovi1" onclick="kategorija('Hokej')">Hokej</button>
+      <button id="sportovi1" onclick="kategorija('Košarka')">Košarka</button>
+      <button id="sportovi1" onclick="kategorija('Nogomet')">Nogomet</button>
+      <button id="sportovi1" onclick="kategorija('Odbojka')">Odbojka</button>
+      <button id="sportovi1" onclick="kategorija('Tenis')">Tenis</button>
+   </div>
+
+   <div class = "aside2", id="gi4">
+      <div id="aside">Kontakt</div>
+      <div id="aside">Newsletter</div>
+      <div id="aside">Pretplati se</div>
+   </div>
+   
+   <div class="main2", id="gi5">
+         <div id="novispojslike">
+            <div id="slikagumb">
+               <img id="slikaproizvoda1" src="images/upitnik.png" alt="proizvod">
+               <button id="kupigumb" onclick="dodaj('1')">
+                  <img id="kosaricadodaj" src="images/kosarica.png" alt="kosara">
+               </button>
+            </div>
+            <p id="proizvod1">Proizvod1</p>
+            <p id="kategorija1">Kategroija</p>
+            <span id="crvenislika1">0</span>
+         </div>
+         <div id="novispojslike">
+            <div id="slikagumb">
+               <img id="slikaproizvoda2" src="images/upitnik.png" alt="proizvod">
+               <button id="kupigumb" onclick="dodaj('2')">
+                  <img id="kosaricadodaj" src="images/kosarica.png" alt="kosara">
+               </button>
+            </div>
+            <p id="proizvod2">Proizvod2</p>
+            <p id="kategorija2">Kategroija</p>
+            <span id="crvenislika2">0</span>
+         </div>
+         <div id="novispojslike">
+            <div id="slikagumb">
+               <img id="slikaproizvoda3" src="images/upitnik.png" alt="proizvod">
+               <button id="kupigumb" onclick="dodaj('3')">
+                  <img id="kosaricadodaj" src="images/kosarica.png" alt="kosara">
+               </button>
+            </div>
+            <p id="proizvod3">Proizvod3</p>
+            <p id="kategorija3">Kategroija</p>
+            <span id="crvenislika3">0</span>
+         </div>
+         <div id="novispojslike">
+            <div id="slikagumb">
+               <img id="slikaproizvoda4" src="images/upitnik.png" alt="proizvod">
+               <button id="kupigumb" onclick="dodaj('4')">
+                  <img id="kosaricadodaj" src="images/kosarica.png" alt="kosara">
+               </button>
+            </div>
+            <p id="proizvod4">Proizvod4</p>
+            <p id="kategorija4">Kategroija</p>
+            <span id="crvenislika4">0</span>
+         </div>
+         <div id="novispojslike">
+            <div id="slikagumb">
+               <img id="slikaproizvoda5" src="images/upitnik.png" alt="proizvod">
+               <button id="kupigumb" onclick="dodaj('5')">
+                  <img id="kosaricadodaj" src="images/kosarica.png" alt="kosara">
+               </button>
+            </div> 
+            <p id="proizvod5">Proizvod5</p>
+            <p id="kategorija5">Kategroija</p>
+            <span id="crvenislika5">0</span>
+         </div>
+   </div>
+</div>
+
+<script src="scripts/index.js"></script>
+<script src="scripts/data.js"></script>
+</body>
+</html>
