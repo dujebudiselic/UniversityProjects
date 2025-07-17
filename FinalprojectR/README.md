@@ -10,6 +10,7 @@ primjenom algoritma K-Means koji razvrstava igrače na temelju boje dresova. Sus
 postiže zadovoljavajuće rezultate u detekciji i praćenju objekata, čime doprinosi analizi 
 sportskih susreta s pomoću računalnog vida. Postoji mogućnost daljnje nadogradnje i 
 proširenja funkcionalnosti. 
+
 Ključne riječi: detekcija objekata, praćenje objekata, nogometni igrači, klasifikacija 
 momčadi, strojno učenje, računalni vid, ByteTrack, K-Means, YOLO
 
@@ -25,5 +26,6 @@ respective teams is implemented using the K-Means algorithm, which groups player
 on the color of their jerseys. The system achieves satisfactory results in object detection and 
 tracking, thus contributing to the analysis of sports matches using computer vision. There is 
 a possibility for further functional expansion. 
+
 Keywords: object detection, object tracking, soccer players, team classification, machine 
 learning, computer vision, ByteTrack, K-Means, YOLO 
