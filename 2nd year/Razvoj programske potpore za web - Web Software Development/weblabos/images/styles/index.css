@@ -1,0 +1,67 @@
+
+.grid-container {
+   display: grid;
+   grid-template-columns: auto auto auto;
+   }
+   #gi0 {
+   grid-column-start: 1;
+   grid-column-end:2;
+   }
+   #gi1 {
+   grid-column-start: 2;
+   grid-column-end:4;
+   }
+   #gi2 {
+   grid-column: 2 / 4;
+   grid-row: 2 / 4;
+   }
+   #gi3 {
+   grid-column: 1 / 2;
+   grid-row: 2 / 5;
+   }
+   #gi4 {
+   grid-column: 1 / 2;
+   grid-row: 5 / 6;
+   }
+   #gi5 {
+   grid-column: 2 / 4;
+   grid-row: 4 / 7;
+   }
+
+
+   .header {
+   display: flex; flex-flow: wrap;  justify-content: space-between;}
+   #kosara_trazilica { background-image: url('https://cdn.pixabay.com/photo/2014/02/10/15/41/skates-263496_1280.jpg');
+   width: 200px; height: 100px; margin: 10px; line-height: 100px;
+   color: white; font-weight: bold; font-size: 2em; text-align: center;}
+   #kategorija { 
+   border: 1px solid black; height: 100px; margin: 10px; line-height: 100px;
+   color: black; font-weight: bold; font-size: 2em; text-align: center; flex-grow: calc(1);}
+
+
+   .main1 {
+   list-style: none; border: 1px solid black;
+   display: flex; flex-flow: wrap;  justify-content: space-between; margin: 10px; flex-direction: column;}
+   #pozdrav {
+   border: 1px solid black; height: 100px; margin: 10px; line-height: 100px;
+   color: black; font-weight: bold; font-size: 2em; text-align: left; }
+
+   .main2 {
+   list-style: none; border: 1px solid black;
+   display: flex; flex-flow: wrap;  justify-content: space-between; margin: 10px}
+
+   .aside1 {
+   border: 1px solid black; 
+   display: flex; flex-flow: wrap;  justify-content: space-between; margin: 10px; flex-direction: column; text-align: center;}
+   #sportovi1 {
+   height: 100px; margin: 10px; line-height: 100px;
+   color: black; font-weight: bold; font-size: 2em; text-align: center; }
+   #sportovi:hover {
+      font-size: 20px;
+   }
+
+   .aside2 {
+   border: 1px solid black; 
+   display: flex; flex-flow: wrap; margin: 10px; flex-direction: column; text-align: center; justify-content: space-evenly; }
+
+   #spojslike{text-align: center; border: 1px solid black;}
